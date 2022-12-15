@@ -1,0 +1,628 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+header nav {
+  top: 0;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+header nav .topnavmain {
+  width: 65%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .topnavmain #hamburgermenu {
+  display: none;
+}
+header nav .topnavmain img {
+  width: 65px;
+  height: 20px;
+}
+header nav .topnavmain .topnavtext {
+  width: 30%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .topnavmain .topnavtext ul {
+  gap: 30px;
+  display: flex;
+}
+header nav .topnavmain .topnavtext ul .dropdown .dropdown-content {
+  display: none;
+}
+header nav .topnavmain .topnavtext ul > div i {
+  font-size: 20px;
+}
+header nav .topnavmain .topnavtext ul li a {
+  font-size: 20px;
+  color: black;
+}
+header nav .topnavmain .topnavtext ul li a:hover {
+  border-bottom: 2px solid black;
+}
+header #topnavmenu {
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  top: 80px;
+  text-align: right;
+  display: none;
+}
+header #topnavmenu ul {
+  margin-right: 40px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+header #topnavmenu ul li a {
+  color: black;
+}
+header #topnavmenu ul li a:hover {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+  }
+  header nav .topnavmain {
+    width: 65%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .topnavmain #hamburgermenu {
+    display: block;
+  }
+  header nav .topnavmain img {
+    width: 65px;
+    height: 20px;
+  }
+  header nav .topnavmain .topnavtext {
+    width: 30%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header nav .topnavmain .topnavtext ul {
+    gap: 30px;
+    display: flex;
+  }
+  header nav .topnavmain .topnavtext ul > li {
+    margin-right: 10px;
+  }
+  header nav .topnavmain .topnavtext ul > li a {
+    display: none;
+  }
+  header nav .topnavmain .topnavtext ul > li a:hover {
+    border-bottom: 1px solid black;
+  }
+  #topnavmenu.active {
+    display: block;
+    background-color: white;
+  }
+}
+main .firstsection {
+  margin-top: 80px;
+  width: 100%;
+  height: 90vh;
+  background-image: url(../imgs/firstsectionimg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+main .firstsection h1 {
+  color: white;
+  font-size: 70px;
+}
+main .firstsection p {
+  color: white;
+  font-size: 20px;
+}
+main .firstsection button {
+  width: 160px;
+  height: 60px;
+  background-color: white;
+  border: 0;
+}
+main .firstsection button a {
+  color: #4D2C57;
+  font-size: 16px;
+}
+main .firstsection button:hover {
+  cursor: pointer;
+  background-color: #e4dae7;
+}
+main .secondsec {
+  max-width: 100%;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+main .secondsec h2 {
+  font-size: 50px;
+  color: #4D2C57;
+}
+main .secondsec .secondseccards {
+  max-width: 1200px;
+  width: 100%;
+  min-height: 43vh;
+  display: flex;
+}
+main .secondsec .secondseccards div {
+  padding: 20px;
+  width: 25%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+main .secondsec .secondseccards div h3 {
+  color: #4D2C57;
+  font-size: 24px;
+}
+main .secondsec .secondseccards div p {
+  color: #4D2C57;
+  font-size: 18px;
+}
+main .secondsec .secondseccards div img {
+  width: 100%;
+  height: 30vh;
+}
+main .secondsec button {
+  width: 150px;
+  height: 60px;
+  background-color: white;
+  border: 2px solid #4D2C57;
+}
+main .secondsec button a {
+  color: #4D2C57;
+  font-size: 16px;
+}
+main .secondsec button:hover {
+  transition: 0.2s;
+  background-color: #4D2C57;
+  cursor: pointer;
+}
+main .secondsec button:hover a {
+  color: white;
+}
+main .thirdsec {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../imgs/thirdsecbgimg.jfif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+main .thirdsec h2 {
+  color: white;
+  font-size: 96px;
+}
+main .thirdsec p {
+  color: white;
+  font-size: 20px;
+}
+main .thirdsec button {
+  width: 160px;
+  height: 60px;
+  background-color: white;
+  border: 0;
+}
+main .thirdsec button a {
+  color: #4D2C57;
+  font-size: 16px;
+}
+main .thirdsec button:hover {
+  background-color: #e4dae7;
+  cursor: pointer;
+}
+main .fourthsection {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .fourthsection .fourthsecItems {
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+main .fourthsection .fourthsecItems #sec4_item1 {
+  width: 48%;
+  min-height: 63vh;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .fourthsection .fourthsecItems #sec4_item1 img {
+  width: 100%;
+  height: 45vh;
+}
+main .fourthsection .fourthsecItems #sec4_item1 h3 {
+  font-size: 32px;
+  color: #4D2C57;
+}
+main .fourthsection .fourthsecItems #sec4_item1 p {
+  font-size: 20px;
+  color: #4D2C57;
+}
+main .fourthsection .fourthsecItems #sec4_item1 button {
+  width: 175px;
+  height: 57px;
+  border: 2px solid #4D2C57;
+  background-color: white;
+}
+main .fourthsection .fourthsecItems #sec4_item1 button a {
+  font-size: 16px;
+}
+main .fourthsection .fourthsecItems #sec4_item1 button:hover {
+  background-color: #4D2C57;
+  cursor: pointer;
+}
+main .fourthsection .fourthsecItems #sec4_item1 button:hover a {
+  color: #e4dae7;
+}
+main .fourthsection .fourthsecItems #sec4_item2 {
+  width: 48%;
+  min-height: 63vh;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .fourthsection .fourthsecItems #sec4_item2 img {
+  width: 100%;
+  height: 45vh;
+}
+main .fourthsection .fourthsecItems #sec4_item2 h3 {
+  font-size: 32px;
+  color: #4D2C57;
+}
+main .fourthsection .fourthsecItems #sec4_item2 p {
+  font-size: 20px;
+  color: #4D2C57;
+}
+main .fourthsection .fourthsecItems #sec4_item2 button {
+  width: 175px;
+  height: 57px;
+  border: 2px solid #4D2C57;
+  background-color: white;
+}
+main .fourthsection .fourthsecItems #sec4_item2 button a {
+  font-size: 16px;
+}
+main .fourthsection .fourthsecItems #sec4_item2 button:hover {
+  background-color: #4D2C57;
+  cursor: pointer;
+}
+main .fourthsection .fourthsecItems #sec4_item2 button:hover a {
+  color: #e4dae7;
+}
+main .signupsection {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../imgs/sec5bgimg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+main .signupsection #signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .signupsection #signup input {
+  width: 392px;
+  height: 50px;
+  background-color: rgba(245, 248, 251, 0.6);
+  padding: 16px 56px 16px 16px;
+  border: none;
+}
+main .signupsection #signup button {
+  width: 140px;
+  height: 55px;
+  background-color: white;
+  border: none;
+}
+main .signupsection #signup button a {
+  color: #4D2C57;
+  font-size: 16px;
+}
+main .signupsection h2 {
+  color: white;
+  font-size: 65px;
+}
+main .followusSection {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .followusSection .follow_us_container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+main .followusSection .follow_us_container h2 {
+  font-size: 50px;
+  color: #4D2C57;
+}
+main .followusSection .follow_us_container a {
+  font-size: 27px;
+  color: #4D2C57;
+  border-bottom: 3px solid #4D2C57;
+}
+main .followusSection .follow_us_container #follow_us_items {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  gap: 25px;
+}
+main .followusSection .follow_us_container #follow_us_items #card1 {
+  width: 32%;
+  height: 100%;
+  background-image: url(../imgs/followusitems1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main .followusSection .follow_us_container #follow_us_items #card2 {
+  width: 32%;
+  height: 100%;
+  background-image: url(../imgs/followusitems2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main .followusSection .follow_us_container #follow_us_items #card3 {
+  width: 32%;
+  height: 100%;
+  background-image: url(../imgs/followusitems3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 900px) {
+  main .firstsection {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../imgs/firstsectionimg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 3 0px;
+  }
+  main .firstsection h1 {
+    color: white;
+    font-size: 100px;
+  }
+  main .firstsection p {
+    color: white;
+    font-size: 20px;
+  }
+  main .firstsection button {
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    border: 0;
+  }
+  main .firstsection button a {
+    color: #4D2C57;
+  }
+  main .secondsec {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+  }
+  main .secondsec h2 {
+    font-size: 50px;
+    color: #4D2C57;
+  }
+  main .secondsec .secondseccards {
+    max-width: 1200px;
+    width: 100%;
+    min-height: 43vh;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  main .secondsec .secondseccards div {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 40px;
+  }
+  main .secondsec .secondseccards div h3 {
+    color: #4D2C57;
+    font-size: 24px;
+  }
+  main .secondsec .secondseccards div p {
+    color: #4D2C57;
+    font-size: 18px;
+  }
+  main .secondsec .secondseccards div img {
+    width: 100%;
+    height: 30vh;
+  }
+  main .secondsec button {
+    width: 150px;
+    height: 60px;
+    background-color: white;
+    border: 2px solid #4D2C57;
+  }
+  main .secondsec button a {
+    color: #4D2C57;
+    font-size: 16px;
+  }
+  main .fourthsection {
+    height: 150vh;
+  }
+  main .fourthsection .fourthsecItems {
+    width: 80%;
+    height: 70vh;
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .fourthsection .fourthsecItems #sec4_item1 {
+    width: 100%;
+  }
+  main .fourthsection .fourthsecItems #sec4_item2 {
+    width: 100%;
+  }
+  main .signupsection h2 {
+    font-size: 46px;
+  }
+  main .followusSection {
+    width: 100%;
+    height: 150vh;
+  }
+  main .followusSection .follow_us_container {
+    width: 60%;
+    height: 140vh;
+    flex-direction: column;
+    gap: 40px;
+  }
+  main .followusSection .follow_us_container h2 {
+    font-size: 35px;
+  }
+  main .followusSection .follow_us_container a {
+    font-size: 22px;
+  }
+  main .followusSection .follow_us_container #follow_us_items {
+    width: 100%;
+    height: 120vh;
+    flex-direction: column;
+  }
+  main .followusSection .follow_us_container #follow_us_items #card1 {
+    width: 100%;
+    height: 100%;
+  }
+  main .followusSection .follow_us_container #follow_us_items #card2 {
+    width: 100%;
+    height: 100%;
+  }
+  main .followusSection .follow_us_container #follow_us_items #card3 {
+    width: 100%;
+    height: 100%;
+  }
+}
+footer {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F6F7F6;
+}
+footer ul {
+  margin-right: 150px;
+  display: flex;
+  gap: 50px;
+}
+footer ul li a {
+  font-size: 18px;
+  color: #1A1A1A;
+  text-decoration: underline;
+}
+footer .footeritems {
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+footer .footeritems img {
+  width: 60px;
+  height: 25px;
+}
+footer .footeritems > div {
+  display: flex;
+  margin-left: 10px;
+  gap: 30px;
+}
+footer .footeritems > div i {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    height: 50vh;
+    gap: 100px;
+  }
+  footer .footeritems {
+    margin-left: 50px;
+    gap: 200px;
+  }
+  footer ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

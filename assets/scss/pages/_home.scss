@@ -1,0 +1,536 @@
+main {
+    .firstsection {
+        margin-top: 80px;
+        width: 100%;
+        height: 90vh;
+        background-image: url(../imgs/firstsectionimg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+
+        h1 {
+            color: white;
+            font-size: 70px;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+        }
+
+        button {
+            width: 160px;
+            height: 60px;
+            background-color: white;
+            border: 0;
+
+            a {
+                color: #4D2C57;
+                font-size: 16px;
+            }
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: #e4dae7;
+        }
+    }
+
+    .secondsec {
+        max-width: 100%;
+        min-height: 110vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+
+        h2 {
+            font-size: 50px;
+            color: #4D2C57;
+        }
+
+        .secondseccards {
+            max-width: 1200px;
+            width: 100%;
+            min-height: 43vh;
+            display: flex;
+
+            div {
+                padding: 20px;
+                width: 25%;
+                height: 45vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: 30px;
+
+                h3 {
+                    color: #4D2C57;
+                    font-size: 24px;
+                }
+
+                p {
+                    color: #4D2C57;
+                    font-size: 18px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 30vh;
+                }
+            }
+        }
+
+        button {
+            width: 150px;
+            height: 60px;
+            background-color: white;
+            border: 2px solid #4D2C57;
+
+            a {
+                color: #4D2C57;
+                font-size: 16px;
+            }
+        }
+
+        button:hover {
+            transition: 0.2s;
+            background-color: #4D2C57;
+
+            a {
+                color: white;
+            }
+
+            cursor: pointer;
+        }
+    }
+
+    .thirdsec {
+        width: 100%;
+        height: 85vh;
+        background-image: url(../imgs/thirdsecbgimg.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+
+        h2 {
+            color: white;
+            font-size: 96px;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+        }
+
+        button {
+            width: 160px;
+            height: 60px;
+            background-color: white;
+            border: 0;
+
+            a {
+                color: #4D2C57;
+                font-size: 16px;
+            }
+        }
+
+        button:hover {
+            background-color: #e4dae7;
+            cursor: pointer;
+        }
+    }
+
+    .fourthsection {
+        width: 100%;
+        height: 110vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fourthsecItems {
+            width: 80%;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            #sec4_item1 {
+                width: 48%;
+                min-height: 63vh;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                img {
+                    width: 100%;
+                    height: 45vh;
+                }
+
+                h3 {
+                    font-size: 32px;
+                    color: #4D2C57;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: #4D2C57;
+                }
+
+                button {
+                    width: 175px;
+                    height: 57px;
+                    border: 2px solid #4D2C57;
+                    background-color: white;
+
+                    a {
+                        font-size: 16px;
+                    }
+                }
+
+                button:hover {
+                    background-color: #4D2C57;
+                    cursor: pointer;
+
+                    a {
+                        color: #e4dae7;
+                    }
+                }
+            }
+
+            #sec4_item2 {
+                width: 48%;
+                min-height: 63vh;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                img {
+                    width: 100%;
+                    height: 45vh;
+                }
+
+                h3 {
+                    font-size: 32px;
+                    color: #4D2C57;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: #4D2C57;
+                }
+
+                button {
+                    width: 175px;
+                    height: 57px;
+                    border: 2px solid #4D2C57;
+                    background-color: white;
+
+                    a {
+                        font-size: 16px;
+                    }
+                }
+
+                button:hover {
+                    background-color: #4D2C57;
+                    cursor: pointer;
+
+                    a {
+                        color: #e4dae7;
+                    }
+                }
+            }
+        }
+    }
+
+    .signupsection {
+        width: 100%;
+        height: 85vh;
+        background-image: url(../imgs/sec5bgimg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 80px;
+
+        #signup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            input {
+                width: 392px;
+                height: 50px;
+                background-color: #F5F8FB99;
+                padding: 16px 56px 16px 16px;
+                border: none;
+            }
+
+            button {
+                width: 140px;
+                height: 55px;
+                background-color: white;
+                border: none;
+
+                a {
+                    color: #4D2C57;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        h2 {
+            color: white;
+            font-size: 65px;
+        }
+    }
+
+    .followusSection {
+        width: 100%;
+        height: 110vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .follow_us_container {
+            width: 80%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+
+            h2 {
+                font-size: 50px;
+                color: #4D2C57;
+            }
+
+            a {
+                font-size: 27px;
+                color: #4D2C57;
+                border-bottom: 3px solid #4D2C57;
+            }
+
+            #follow_us_items {
+                width: 100%;
+                height: 50vh;
+                display: flex;
+                gap: 25px;
+
+                #card1 {
+                    width: 32%;
+                    height: 100%;
+                    background-image: url(../imgs/followusitems1.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                #card2 {
+                    width: 32%;
+                    height: 100%;
+                    background-image: url(../imgs/followusitems2.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                #card3 {
+                    width: 32%;
+                    height: 100%;
+                    background-image: url(../imgs/followusitems3.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        .firstsection {
+            width: 100%;
+            height: 90vh;
+            background-image: url(../imgs/firstsectionimg.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 3 0px;
+
+            h1 {
+                color: white;
+                font-size: 100px;
+            }
+
+            p {
+                color: white;
+                font-size: 20px;
+            }
+
+            button {
+                width: 160px;
+                height: 60px;
+                background-color: white;
+                border: 0;
+
+                a {
+                    color: #4D2C57;
+                }
+            }
+        }
+
+        .secondsec {
+            width: 100%;
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 100px;
+            text-align: center;
+
+            h2 {
+                font-size: 50px;
+                color: #4D2C57;
+            }
+
+            .secondseccards {
+                max-width: 1200px;
+                width: 100%;
+                min-height: 43vh;
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+
+                div {
+                    width: 100%;
+                    margin: 0 auto;
+                    min-height: 45vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 30px;
+                    padding: 40px;
+
+                    h3 {
+                        color: #4D2C57;
+                        font-size: 24px;
+                    }
+
+                    p {
+                        color: #4D2C57;
+                        font-size: 18px;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 30vh;
+                    }
+                }
+            }
+
+            button {
+                width: 150px;
+                height: 60px;
+                background-color: white;
+                border: 2px solid #4D2C57;
+
+                a {
+                    color: #4D2C57;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .fourthsection {
+            height: 150vh;
+
+            .fourthsecItems {
+                width: 80%;
+                height: 70vh;
+                flex-direction: column;
+                gap: 30px;
+
+                #sec4_item1 {
+                    width: 100%;
+                }
+
+                #sec4_item2 {
+                    width: 100%;
+                }
+            }
+        }
+
+        .signupsection {
+            h2 {
+                font-size: 46px;
+            }
+        }
+
+        .followusSection {
+            width: 100%;
+            height: 150vh;
+
+            .follow_us_container {
+                width: 60%;
+                height: 140vh;
+                flex-direction: column;
+                gap: 40px;
+
+                h2 {
+                    font-size: 35px;
+                }
+
+                a {
+                    font-size: 22px;
+                }
+
+                #follow_us_items {
+                    width: 100%;
+                    height: 120vh;
+                    flex-direction: column;
+
+                    #card1 {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    #card2 {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    #card3 {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

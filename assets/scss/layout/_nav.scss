@@ -1,0 +1,150 @@
+header {
+    nav {
+        top: 0;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+
+        .topnavmain {
+            width: 65%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            #hamburgermenu {
+                display: none;
+            }
+
+            img {
+                width: 65px;
+                height: 20px;
+            }
+
+            .topnavtext {
+                width: 30%;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                ul {
+                    gap: 30px;
+                    display: flex;
+                    .dropdown{
+                        .dropdown-content{
+                            display: none;
+                            
+                        }
+                    }
+                    &>div {
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+
+                    li {
+                        a {
+                            font-size: 20px;
+                            color: black;
+                        }
+
+                        a:hover {
+                            border-bottom: 2px solid black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #topnavmenu {
+        width: 100%;
+        height: 110px;
+        position: fixed;
+        top: 80px;
+        text-align: right;
+        display: none;
+
+        ul {
+            margin-right: 40px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+
+            li {
+                a {
+                    color: black;
+                }
+
+                a:hover {
+                    border-bottom: 2px solid black;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        nav {
+            background-color: white;
+            width: 100%;
+            height: 80px;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+
+            .topnavmain {
+                width: 65%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                #hamburgermenu {
+                    display: block;
+                }
+
+                img {
+                    width: 65px;
+                    height: 20px;
+                }
+
+                .topnavtext {
+                    width: 30%;
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    ul {
+                        gap: 30px;
+                        display: flex;
+
+                        &>li {
+                            margin-right: 10px;
+
+                            a {
+                                display: none;
+                            }
+
+                            a:hover {
+                                border-bottom: 1px solid black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #topnavmenu.active {
+        display: block;
+        background-color: white;
+    }
+}
