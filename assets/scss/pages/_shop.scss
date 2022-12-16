@@ -1,0 +1,264 @@
+html{
+    scroll-behavior: smooth;
+}
+header{
+    nav{
+        z-index: 1;
+    }
+}
+main {
+
+    // First Section Start
+    .shop_firstsec {
+        margin-top: 80px;
+        width: 100%;
+        height: 42vh;
+        background-image: url(../imgs/shopimgs/shop_firstsecbgimg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-size: 100px;
+            color: white;
+            font-weight: 500;
+        }
+    }
+
+    // First Section End
+
+    // Cards Section Start
+    .shop_cardsSec {
+        width: 100%;
+        height: 190vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .shop_cards_container {
+            width: 65%;
+            height: 150vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            #search-bag {
+                width: 250px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+
+                #searchproducts:hover {
+                    cursor: pointer;
+                }
+
+                #searchproducts {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 4px;
+
+                    svg {
+                        color: #757575;
+                        width: 30px;
+                        height: 20px;
+                    }
+
+                    a {
+                        color: #757575;
+                        font-size: 16px;
+                    }
+                }
+
+                #shoppingbag:hover {
+                    cursor: pointer;
+                }
+
+                #shoppingbag {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 4px;
+
+                    svg {
+                        color: #757575;
+                        width: 30px;
+                        height: 20px;
+                    }
+
+                    a {
+                        color: #757575;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            #refine-sort {
+                width: 200px;
+                height: 50px;
+                align-self: flex-end;
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                gap: 20px;
+
+                a {
+                    font-size: 14px;
+                    color: #757575;
+                }
+            }
+
+            .shop_cards {
+                width: 100%;
+                height: 140vh;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                &>div {
+                    width: 100%;
+                    height: 45vh;
+                    display: flex;
+                    gap: 20px;
+
+                    &>div {
+                        width: 33%;
+                        height: 90%;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 15px;
+
+                        h2 {
+                            color: #191919;
+                            font-size: 20px;
+                        }
+
+                        h3 {
+                            color: #333333;
+                            font-size: 28px;
+                        }
+
+                        img {
+                            width: 400px;
+                            height: 300px;
+                            cursor: pointer;
+                        }
+
+                        img:hover {
+                            scale: 1.1;
+                            cursor: pointer;
+                            transition: 0.8s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Cards Section End
+}
+
+@media only screen and (max-width: 998px) {
+    main {
+        .shop_cardsSec {
+            width: 100%;
+            height: 280vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .shop_cards_container {
+                height: 230vh;
+
+                #search-bag {
+                    #searchproducts {
+                        svg {
+                            width: 25px;
+                            height: 15px;
+                        }
+
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+
+                    #shoppingbag {
+                        svg {
+                            width: 25px;
+                            height: 15px;
+                        }
+
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                #refine-sort {
+                    a {
+                        font-size: 12px;
+                    }
+                }
+
+                .shop_cards {
+                    width: 100%;
+                    height: 200vh;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    &>div {
+                        width: 100%;
+                        height: 95vh;
+                        display: flex;
+                        gap: 30px;
+                        flex-direction: column;
+                        align-items: center;
+
+                        &>div {
+                            width: 250px;
+                            height: 90%;
+                            gap: 10px;
+                            overflow: hidden;
+
+                            h2 {
+                                color: #191919;
+                                font-size: 13px;
+                            }
+
+                            h3 {
+                                color: #333333;
+                                font-size: 17px;
+                            }
+
+                            img {
+                                width: 300px;
+                                height: 300px;
+                                overflow: hidden;
+                            }
+                            img:hover{
+                                scale: 1.1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        margin-top: 500px;
+    }
+}
+@media only screen and (max-width: 600px){
+    footer{
+        margin-top: 500px;
+    }
+}

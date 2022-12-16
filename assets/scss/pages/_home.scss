@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 main {
     .firstsection {
         margin-top: 80px;
@@ -280,9 +283,11 @@ main {
                 background-color: #F5F8FB99;
                 padding: 16px 56px 16px 16px;
                 border: none;
+                outline: none;
             }
 
             button {
+                cursor: pointer;
                 width: 140px;
                 height: 55px;
                 background-color: white;

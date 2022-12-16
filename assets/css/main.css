@@ -9,6 +9,10 @@ ul, ol, li, a {
   list-style: none;
 }
 
+* {
+  font-family: sans-serif;
+}
+
 header nav {
   top: 0;
   width: 100%;
@@ -27,6 +31,7 @@ header nav .topnavmain {
 }
 header nav .topnavmain #hamburgermenu {
   display: none;
+  cursor: pointer;
 }
 header nav .topnavmain img {
   width: 65px;
@@ -126,6 +131,10 @@ header #topnavmenu ul li a:hover {
     background-color: white;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 main .firstsection {
   margin-top: 80px;
   width: 100%;
@@ -365,8 +374,10 @@ main .signupsection #signup input {
   background-color: rgba(245, 248, 251, 0.6);
   padding: 16px 56px 16px 16px;
   border: none;
+  outline: none;
 }
 main .signupsection #signup button {
+  cursor: pointer;
   width: 140px;
   height: 55px;
   background-color: white;
@@ -575,6 +586,252 @@ main .followusSection .follow_us_container #follow_us_items #card3 {
     height: 100%;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+header nav {
+  z-index: 1;
+}
+
+main .shop_firstsec {
+  margin-top: 80px;
+  width: 100%;
+  height: 42vh;
+  background-image: url(../imgs/shopimgs/shop_firstsecbgimg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .shop_firstsec h1 {
+  font-size: 100px;
+  color: white;
+  font-weight: 500;
+}
+main .shop_cardsSec {
+  width: 100%;
+  height: 190vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .shop_cardsSec .shop_cards_container {
+  width: 65%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .shop_cardsSec .shop_cards_container #search-bag {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+main .shop_cardsSec .shop_cards_container #search-bag #searchproducts:hover {
+  cursor: pointer;
+}
+main .shop_cardsSec .shop_cards_container #search-bag #searchproducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+main .shop_cardsSec .shop_cards_container #search-bag #searchproducts svg {
+  color: #757575;
+  width: 30px;
+  height: 20px;
+}
+main .shop_cardsSec .shop_cards_container #search-bag #searchproducts a {
+  color: #757575;
+  font-size: 16px;
+}
+main .shop_cardsSec .shop_cards_container #search-bag #shoppingbag:hover {
+  cursor: pointer;
+}
+main .shop_cardsSec .shop_cards_container #search-bag #shoppingbag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+main .shop_cardsSec .shop_cards_container #search-bag #shoppingbag svg {
+  color: #757575;
+  width: 30px;
+  height: 20px;
+}
+main .shop_cardsSec .shop_cards_container #search-bag #shoppingbag a {
+  color: #757575;
+  font-size: 16px;
+}
+main .shop_cardsSec .shop_cards_container #refine-sort {
+  width: 200px;
+  height: 50px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+}
+main .shop_cardsSec .shop_cards_container #refine-sort a {
+  font-size: 14px;
+  color: #757575;
+}
+main .shop_cardsSec .shop_cards_container .shop_cards {
+  width: 100%;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .shop_cardsSec .shop_cards_container .shop_cards > div {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  gap: 20px;
+}
+main .shop_cardsSec .shop_cards_container .shop_cards > div > div {
+  width: 33%;
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+main .shop_cardsSec .shop_cards_container .shop_cards > div > div h2 {
+  color: #191919;
+  font-size: 20px;
+}
+main .shop_cardsSec .shop_cards_container .shop_cards > div > div h3 {
+  color: #333333;
+  font-size: 28px;
+}
+main .shop_cardsSec .shop_cards_container .shop_cards > div > div img {
+  width: 400px;
+  height: 300px;
+  cursor: pointer;
+}
+main .shop_cardsSec .shop_cards_container .shop_cards > div > div img:hover {
+  scale: 1.1;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+@media only screen and (max-width: 998px) {
+  main .shop_cardsSec {
+    width: 100%;
+    height: 280vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .shop_cardsSec .shop_cards_container {
+    height: 230vh;
+  }
+  main .shop_cardsSec .shop_cards_container #search-bag #searchproducts svg {
+    width: 25px;
+    height: 15px;
+  }
+  main .shop_cardsSec .shop_cards_container #search-bag #searchproducts a {
+    font-size: 14px;
+  }
+  main .shop_cardsSec .shop_cards_container #search-bag #shoppingbag svg {
+    width: 25px;
+    height: 15px;
+  }
+  main .shop_cardsSec .shop_cards_container #search-bag #shoppingbag a {
+    font-size: 14px;
+  }
+  main .shop_cardsSec .shop_cards_container #refine-sort a {
+    font-size: 12px;
+  }
+  main .shop_cardsSec .shop_cards_container .shop_cards {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  main .shop_cardsSec .shop_cards_container .shop_cards > div {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .shop_cardsSec .shop_cards_container .shop_cards > div > div {
+    width: 250px;
+    height: 90%;
+    gap: 10px;
+    overflow: hidden;
+  }
+  main .shop_cardsSec .shop_cards_container .shop_cards > div > div h2 {
+    color: #191919;
+    font-size: 13px;
+  }
+  main .shop_cardsSec .shop_cards_container .shop_cards > div > div h3 {
+    color: #333333;
+    font-size: 17px;
+  }
+  main .shop_cardsSec .shop_cards_container .shop_cards > div > div img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+  main .shop_cardsSec .shop_cards_container .shop_cards > div > div img:hover {
+    scale: 1.1;
+  }
+  footer {
+    margin-top: 500px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer {
+    margin-top: 500px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+main .aboutmina {
+  margin-top: 80px;
+  width: 100%;
+  height: 42vh;
+  background-image: url("../imgs/aboutimgs/aboutmina.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .aboutmina h1 {
+  color: white;
+  font-size: 100px;
+  font-weight: 500;
+}
+main #aboutmaintext {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main #aboutmaintext h2 {
+  color: #4D2C57;
+  font-size: 24px;
+}
+
 footer {
   width: 100%;
   height: 30vh;

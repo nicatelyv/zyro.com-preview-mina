@@ -1,0 +1,39 @@
+html{
+    scroll-behavior: smooth;
+}
+main{
+    // About Mina Section Start
+    .aboutmina{
+        margin-top: 80px;
+        width: 100%;
+        height: 42vh;
+        background-image: url("../imgs/aboutimgs/aboutmina.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color:  white;
+            font-size: 100px;
+            font-weight: 500;
+        }
+    }
+    //About Mina Section End
+
+    //About Main text Start
+    #aboutmaintext{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            color: #4D2C57;
+            font-size: 24px;
+        }
+    }
+    //About Main text End
+}
